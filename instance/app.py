@@ -1,4 +1,4 @@
-from models import db, Producto  # Importar la base de datos y el modelo de Producto
+from models import db, Bar # Importar la base de datos y el modelo de Producto
 
 # Crear algunos productos de ejemplo
 with app.app_context():

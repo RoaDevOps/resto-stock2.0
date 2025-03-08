@@ -1,14 +1,11 @@
-# Importamos Flask
-from flask import Flask  
+from flask import Flask, render_template
 
-# Creamos una instancia de Flask
-app = Flask(__name__)  
+app = Flask(__name__)
 
-# Definimos la ruta principal "/"
 @app.route('/')
 def home():
-    return "¡Bienvenido al Sistema de Inventario de Restaurante!"
+    return render_template('index.html')
 
-# Ejecutamos la aplicación si este archivo es el principal
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
+
